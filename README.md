@@ -1,1 +1,1 @@
-    CheckPoint.HOOKS
+    CheckPoint.props

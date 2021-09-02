@@ -1,5 +1,7 @@
 import React from "react";
-
+import Rating from "@material-ui/lab/Rating";
+import Typography from "@material-ui/core/Typography";
+import Box from "@material-ui/core/Box";
 const Movies = ({ oneMovie }) => {
   const handleClick = () => alert(oneMovie.name);
   return (
@@ -18,23 +20,10 @@ const Movies = ({ oneMovie }) => {
             <a href="https://www.imdb.com/title/tt4912910/" target="_blank">
               Read More
             </a>
-            <div class="social-btn">
-              <button>
-                <i class="fas fa-play"></i> SEE TRAILER
-              </button>
-
-              <button>
-                <i class="fas fa-download"></i> DOWNLOAD
-              </button>
-
-              <button>
-                <i class="fas fa-thumbs-up"></i> 97%
-              </button>
-
-              <button>
-                <i class="fas fa-star"></i>
-              </button>
-            </div>
+            <Box component="fieldset" mb={3} borderColor="transparent">
+              <Typography component="legend"></Typography>
+              <Rating name="read-only" value={oneMovie.rating} readOnly />
+            </Box>
           </div>
         </div>
         <div class="card_right">
