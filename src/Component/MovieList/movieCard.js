@@ -1,10 +1,10 @@
-import React from "react";
-import "./movieCards.css";
-import Movies from "./Movies";
+import React from 'react';
+import Movies from '../Movie/Movies';
+import './movieCards.css';
 
 const movieCard = ({ oneMovie, searchItem }) => {
   return (
-    <div className="help">
+    <div className='help'>
       {oneMovie
 
         .filter((el) => el.name.toLowerCase().includes(searchItem))

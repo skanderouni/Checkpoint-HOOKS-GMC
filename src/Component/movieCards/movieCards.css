@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .main_card {
@@ -158,7 +158,7 @@ button:hover {
 
 /*  FOLLOW*/
 .Follow {
-  background: url("https://pbs.twimg.com/profile_images/959092900708544512/v4Db9QRv_bigger.jpg")
+  background: url('https://pbs.twimg.com/profile_images/959092900708544512/v4Db9QRv_bigger.jpg')
     no-repeat center / contain;
   width: 50px;
   height: 50px;
